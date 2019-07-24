@@ -30,6 +30,8 @@ as an input for the next, and would predict relative rather than
 absolute values.
 '''
 
+
+
 # Remember to update the script for the new data when you change this URL
 URL = "https://archive.scryfall.com/json/scryfall-default-cards.json"
 
@@ -275,4 +277,3 @@ if __name__ == '__main__':
     plot(results)
 
 
-'''
