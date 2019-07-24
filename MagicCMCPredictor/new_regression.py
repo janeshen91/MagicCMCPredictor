@@ -1,16 +1,21 @@
 
 URL = "https://archive.scryfall.com/json/scryfall-oracle-cards.json"
 
-# 17 = CMC
-# 18 = type line
-# 19 = oracle text
-# 20 = power
-# 21 = toughness
-# 22 = colors
-# 23 = color identity
-# 43 = rarity
+# 7  = CMC
+# 9  = color identity
+# 10 = color indicator
+# 11 = colors
+# 29 = loyalty
+# 30 = mana cost
+# 38 = oracle text
+# 40 = power
+# 44 = rarity
+# 46 = released at
+# 55 = toughness
+# 56 = type line
 
-TARGET_COLUMN = 17
+
+TARGET_COLUMN = 7
 
 from pandas import read_json
 import numpy as np
@@ -32,8 +37,8 @@ def download_data():
         dtype='dict'
         )
 
-    return frame[[18, 19, 20, 21, 22, 23, 43, TARGET_COLUMN]]
-
+    #return frame[['color_identity', 'color_indicator', 'colors', 'loyalty', 'mana_cost', 'oracle_text', 'power', 'rarity', 'released_at', 'toughness', 'type_line', 'cmc']]
+    return frame[['power', 'toughness', 'cmc']]
 
 
 def get_features_and_labels(frame):
