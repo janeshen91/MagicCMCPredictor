@@ -89,9 +89,14 @@ def download_data():
 
 
 def get_features_and_labels(frame):
-   # subframe=frame[~frame['power'].isin(['*', '*+1', '1+*', '2+*', '∞', '?', '*²', float('nan')]) & ~frame['toughness'].isin(['*', '*+1', '1+*', '2+*', '∞', '?', '*²', float('nan')])]
-    
-    arr = np.array(frame[['power','toughness','cmc']], dtype=np.float)
+
+    subframe = frame[~frame['power'].isin(['*', '*+1', '1+*', '2+*', '∞', '?', '*²', float('nan')])]
+    subframe = subframe[~subframe['toughness'].isin(['*', '*+1', '1+*', '2+*', '∞', '?', '*²', float('nan')])]
+    subframe = subframe[subframe['set_type'] != 'funny']
+
+    arr = np.array(subframe[['power', 'toughness', 'cmc']], dtype=np.float)
+
+    arr = np.array(subframe[['power','toughness','cmc']], dtype=np.float)
 
     from sklearn.preprocessing import StandardScaler, MinMaxScaler
     arr = MinMaxScaler().fit_transform(arr)
