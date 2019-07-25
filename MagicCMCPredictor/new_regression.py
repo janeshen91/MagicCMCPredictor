@@ -17,6 +17,53 @@ URL = "https://archive.scryfall.com/json/scryfall-oracle-cards.json"
 
 TARGET_COLUMN = 7
 
+# Activate
+# Attach
+# Cast
+# Counter
+# Create
+# Deathtouch
+# Defender
+# Destroy
+# Discard
+# Double strike
+# Enchant
+# Equip
+# Exchange
+# Exile
+# Fight
+# First strike
+# Flash
+# Flying
+# Haste
+# Hexproof
+# Indestructible
+# Lifelink
+# Menace
+# Play
+# Protection
+# Reach
+# Reveal
+# Sacrifice
+# Scry
+# Search
+# Shuffle
+# Tap
+# Untap
+# Trample
+
+# Ante
+# Banding
+# Bury
+# Fear
+# Shroud
+# Intimidate
+# Landwalk
+# Prowess
+# Regenerate
+
+
+
 from pandas import read_json
 import numpy as np
 import matplotlib.pyplot as plt
