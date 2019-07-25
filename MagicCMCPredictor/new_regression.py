@@ -85,12 +85,16 @@ def download_data():
         )
 
     #return frame[['color_identity', 'color_indicator', 'colors', 'loyalty', 'mana_cost', 'oracle_text', 'power', 'rarity', 'released_at', 'toughness', 'type_line', 'cmc']]
-    return frame[['power', 'toughness', 'cmc']]
+    return frame[['power', 'toughness', 'cmc','set_type']]
 
 
 def get_features_and_labels(frame):
 
-    arr = np.array(frame[~frame['power'].isin(['*', '*+1', '1+*', '2+*', '∞', '?', '*²', float('nan')]) & ~frame['toughness'].isin(['*', '*+1', '1+*', '2+*', '∞', '?', '*²', float('nan')])], dtype=np.float)
+    subframe = frame[~frame['power'].isin(['*', '*+1', '1+*', '2+*', '∞', '?', '*²', float('nan')])]
+    subframe = subframe[~subframe['toughness'].isin(['*', '*+1', '1+*', '2+*', '∞', '?', '*²', float('nan')])]
+    subframe = subframe[subframe['set_type'] != 'funny']
+    
+    arr = np.array(subframe[['power', 'toughness', 'cmc']], dtype=np.float)
     
 
     from sklearn.preprocessing import StandardScaler, MinMaxScaler
