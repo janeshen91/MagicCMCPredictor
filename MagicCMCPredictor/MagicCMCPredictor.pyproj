@@ -12,6 +12,7 @@
     <OutputPath>.</OutputPath>
     <InterpreterId>CondaEnv|CondaEnv|env</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
+    <ProjectGuid>{7caf025c-f13c-4d65-9ab2-442878019086}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

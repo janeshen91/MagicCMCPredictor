@@ -43,7 +43,8 @@ def download_data():
 
 def get_features_and_labels(frame):
 
-    arr = np.array(frame, dtype=np.float)
+    arr = np.array(frame[~frame['power'].isin(['*', '*+1', '1+*', '2+*', '∞', '?', '*²', float('nan')]) & ~frame['toughness'].isin(['*', '*+1', '1+*', '2+*', '∞', '?', '*²', float('nan')])], dtype=np.float)
+    
 
     from sklearn.preprocessing import StandardScaler, MinMaxScaler
     arr = MinMaxScaler().fit_transform(arr)
