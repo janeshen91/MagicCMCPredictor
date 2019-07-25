@@ -25,6 +25,7 @@
   <ItemGroup>
     <None Include="plot_ols.py" />
     <Compile Include="new_regression.py" />
+    <Compile Include="plot_svm_regression.py" />
     <Compile Include="tryOutPanda.py">
       <Publish>False</Publish>
     </Compile>
