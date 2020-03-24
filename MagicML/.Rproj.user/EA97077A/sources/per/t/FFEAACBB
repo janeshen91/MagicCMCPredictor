@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585043087388.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2171046122",
+    "id" : "FFEAACBB",
+    "lastKnownWriteTime" : 1585056035,
+    "last_content_update" : 1585056035452,
+    "path" : "~/MagicML/sampleHTML.Rmd",
+    "project_path" : "sampleHTML.Rmd",
+    "properties" : {
+        "cursorPosition" : "119,0",
+        "docOutlineVisible" : "0",
+        "last_setup_crc32" : "5C38D61bb338d19",
+        "scrollLine" : "104",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

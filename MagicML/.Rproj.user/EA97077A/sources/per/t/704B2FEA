@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1563953770689.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1650407828",
+    "id" : "704B2FEA",
+    "lastKnownWriteTime" : 1585047651,
+    "last_content_update" : 1585047651604,
+    "path" : "~/MagicML/tryRegression.R",
+    "project_path" : "tryRegression.R",
+    "properties" : {
+        "cursorPosition" : "97,0",
+        "scrollLine" : "78",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

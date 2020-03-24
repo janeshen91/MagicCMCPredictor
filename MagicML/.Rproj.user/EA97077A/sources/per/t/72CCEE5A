@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584973248750.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "72CCEE5A",
+    "lastKnownWriteTime" : 5292976842137927680,
+    "last_content_update" : 1584973248750,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "90bd08bb0a1e44b3b04063b862a552fc",
+        "name" : "smallList",
+        "title" : "smallList"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
