@@ -124,7 +124,7 @@ def evaluate_learner(X_train, X_test, y_train, y_test):
     from sklearn.svm import SVR
 
     # Train using a radial basis function
-    svr = SVR(kernel='rbf', gamma=0.1)
+    svr = SVR(kernel='rbf', gamma=0.0001, C=1000.6969696969696)
     svr.fit(X_train, y_train)
     y_pred = svr.predict(X_test)
     r_2 = svr.score(X_test, y_test)
